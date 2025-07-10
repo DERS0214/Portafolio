@@ -5,9 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { Resend } from 'resend';
 
-const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY);
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -67,32 +65,22 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    if (!import.meta.env.VITE_RESEND_API_KEY) {
-      toast({
-        title: "Error de configuración",
-        description: "Error en el envío de correo electrónico",
-        variant: "destructive"
-      });
-      setIsSubmitting(false);
-      return;
-    }
-
     try {
-      const { data, error } = await resend.emails.send({
-        from: 'onboarding@resend.dev',
-        to: 'dramirez021487@gmail.com',
-        subject: `Mensaje de Portafolio: ${formData.subject}`,
-        html: `
-          <p><strong>De:</strong> ${formData.name} &lt;${formData.email}&gt;</p>
-          <p><strong>Asunto:</strong> ${formData.subject}</p>
-          <br>
-          <p><strong>Mensaje:</strong></p>
-          <p>${formData.message}</p>
-        `,
-      });
+      // En producción usamos la ruta /api/send-email para evitar CORS y exponer la API key
+      if (!import.meta.env.DEV) {
+        const response = await fetch("/api/send-email", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
 
-      if (error) {
-        throw new Error(error.message);
+        if (!response.ok) {
+          const text = await response.text();
+          throw new Error(text || "Error desconocido");
+        }
+      } else {
+        // Desarrollo local: simulamos el envío para evitar API externas.
+        await new Promise(resolve => setTimeout(resolve, 1000));
       }
 
       toast({
