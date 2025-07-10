@@ -4,8 +4,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ command }) => ({
-  // Solo añadimos la ruta base cuando hacemos build para GitHub Pages.
-  base: command === "build" ? "/curriculum/" : "/",
+  // Solo añadimos la ruta base cuando hacemos build para GitHub Pages y no estamos en Vercel.
+  base: command === "build" && !process.env.VERCEL ? "/curriculum/" : "/",
   server: {
     host: "::",
     port: 8080,
