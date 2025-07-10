@@ -3,8 +3,6 @@
 
 # README del Proyecto Curriculum
 
-Basándome en la información del proyecto, aquí tienes un README completo en español:
-
 ---
 
 # 📄 Curriculum Portfolio - David Ramírez
