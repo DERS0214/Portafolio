@@ -1,73 +1,166 @@
-# Welcome to your Lovable project
 
-## Project info
 
-**URL**: https://lovable.dev/projects/f9f3c96d-ad28-42d1-a7b0-5ccb49d33a5d
 
-## How can I edit this code?
+# README del Proyecto Curriculum
 
-There are several ways of editing your application.
+Basándome en la información del proyecto, aquí tienes un README completo en español:
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f9f3c96d-ad28-42d1-a7b0-5ccb49d33a5d) and start prompting.
+# 📄 Curriculum Portfolio - David Ramírez
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Descripción del Proyecto
 
-**Use your preferred IDE**
+Este proyecto es una aplicación web de portafolio personal desarrollada con React y TypeScript [1](#0-0) . Se trata de una aplicación de una sola página (SPA) que presenta información profesional, habilidades técnicas, proyectos y detalles de contacto [2](#0-1) .
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+El portafolio está diseñado como una aplicación React moderna que sigue las mejores prácticas de desarrollo web, utilizando tecnologías de vanguardia para crear una experiencia de usuario fluida y profesional.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🚀 Tecnologías Utilizadas
 
-Follow these steps:
+### Stack Principal
+- **React** ^18.3.1 - Framework de UI
+- **TypeScript** ^5.5.3 - Tipado estático
+- **Vite** ^7.0.3 - Herramienta de build y servidor de desarrollo
+- **Tailwind CSS** ^3.4.11 - Framework CSS utility-first
+- **React Router** ^6.26.2 - Enrutamiento del lado del cliente
+- **React Query** ^5.56.2 - Gestión de estado y datos
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Componentes UI
+- **Radix UI** - Primitivos de UI accesibles
+- **Lucide React** - Iconos modulares
+- **Shadcn/UI** - Sistema de componentes [3](#0-2) 
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📦 Instalación
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Prerrequisitos
+- Node.js (versión 16 o superior)
+- npm o yarn
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+### Pasos de Instalación
+
+1. **Clona el repositorio**
+   ```bash
+   git clone https://github.com/DERS0214/curriculum.git
+   cd curriculum
+   ```
+
+2. **Instala las dependencias**
+   ```bash
+   npm install
+   ```
+
+3. **Ejecuta el servidor de desarrollo**
+   ```bash
+   npm run dev
+   ```
+
+4. **Abre tu navegador**
+   Visita `http://localhost:5173` para ver la aplicación. [4](#0-3) 
+
+## 🎨 Secciones Principales
+
+La aplicación está organizada en seis secciones principales que muestran diferentes aspectos del perfil profesional:
+
+### 1. **Hero Section** 
+- Presentación inicial con foto de perfil
+- Animación de roles profesionales rotativa
+- Botones de llamada a la acción
+- Enlaces a redes sociales [5](#0-4) 
+
+### 2. **About Section**
+- Descripción del perfil profesional
+- Estadísticas académicas y profesionales
+- Áreas de competencia destacadas
+- Estado de disponibilidad [6](#0-5) 
+
+### 3. **Skills Section**
+- Habilidades técnicas organizadas por categorías
+- Niveles de competencia (Básico, Intermedio, Avanzado)
+- Lenguajes de programación con años de experiencia
+- Herramientas y tecnologías [7](#0-6) 
+
+### 4. **Projects Section**
+- Showcase de proyectos académicos y personales
+- Enlaces a repositorios y demos
+- Tecnologías utilizadas en cada proyecto
+
+### 5. **Education Section**
+- Historial académico
+- Certificaciones obtenidas
+- Formación complementaria
+
+### 6. **Contact Section**
+- Formulario de contacto
+- Información de contacto
+- Mapa de ubicación
+
+## 🏗️ Estructura del Proyecto
+
+```
+curriculum/
+├── src/
+│   ├── components/
+│   │   ├── sections/          # Secciones principales
+│   │   ├── ui/               # Componentes UI reutilizables
+│   ├── hooks/                # Hooks personalizados
+│   ├── lib/                  # Utilidades y configuraciones
+│   ├── pages/                # Páginas de la aplicación
+│   ├── providers/            # Proveedores de contexto
+│   ├── App.tsx               # Componente principal
+│   └── main.tsx              # Punto de entrada
+├── public/                   # Archivos estáticos
+├── package.json              # Dependencias y scripts
+├── vite.config.ts            # Configuración de Vite
+├── tailwind.config.ts        # Configuración de Tailwind
+└── README.md                 # Este archivo
 ```
 
-**Edit a file directly in GitHub**
+## 🚀 Scripts Disponibles
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- **`npm run dev`** - Inicia el servidor de desarrollo
+- **`npm run build`** - Construye la aplicación para producción
+- **`npm run preview`** - Previsualiza la build de producción
+- **`npm run deploy`** - Despliega la aplicación [4](#0-3) 
 
-**Use GitHub Codespaces**
+## 🌐 Despliegue
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+La aplicación está configurada para desplegarse en GitHub Pages de forma automática. El sistema de despliegue soporta tanto despliegue manual como automático a través de la plataforma Lovable [8](#0-7) .
 
-## What technologies are used for this project?
+### Opciones de Despliegue:
+- **GitHub Pages** - Hosting estático gratuito
+- **Lovable Platform** - Despliegue automático
+- **Dominio personalizado** - Configuración opcional
 
-This project is built with:
+## 🎯 Características Destacadas
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Diseño Responsive** - Adaptable a todos los dispositivos
+- **Animaciones Fluidas** - Transiciones suaves entre secciones
+- **Accesibilidad** - Componentes accesibles con Radix UI
+- **Tema Oscuro/Claro** - Soporte para múltiples temas
+- **Navegación Suave** - Scroll suave entre secciones
+- **Optimización SEO** - Metadatos y estructura semántica
 
-## How can I deploy this project?
+## 🔧 Configuración
 
-Simply open [Lovable](https://lovable.dev/projects/f9f3c96d-ad28-42d1-a7b0-5ccb49d33a5d) and click on Share -> Publish.
+El proyecto utiliza múltiples archivos de configuración para coordinar las herramientas de desarrollo:
 
-## Can I connect a custom domain to my Lovable project?
+- `vite.config.ts` - Configuración de la herramienta de build
+- `tailwind.config.ts` - Configuración del framework CSS
+- `eslint.config.js` - Reglas de calidad de código
+- `postcss.config.js` - Pipeline de procesamiento CSS [9](#0-8) 
 
-Yes, you can!
+## 👨‍💻 Desarrollador
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+**David Ramírez**
+- Desarrollador Full-Stack
+- Ingeniero en Computación
+- Estudiante de 6º Semestre
+- Especialista en Java & React
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 📄 Licencia
+
+Este proyecto es un portafolio personal y está disponible bajo los términos especificados en el repositorio.
+
+---
+
+**Notas**: Este README está basado en la estructura y configuración actual del proyecto. Para obtener la información más actualizada, consulta los archivos de configuración y la documentación del proyecto.
