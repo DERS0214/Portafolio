@@ -15,7 +15,7 @@ const EducationSection = () => {
         "Promedio destacado en materias de programación",
         "Liderazgo en proyectos colaborativos",
         "Experiencia en metodologías ágiles",
-        "Desarrollo de aplicaciones end-to-end"
+        "Desarrollo de aplicaciones"
       ]
     },
     {

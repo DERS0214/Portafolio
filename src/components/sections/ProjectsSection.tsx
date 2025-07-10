@@ -6,83 +6,102 @@ import { Badge } from "@/components/ui/badge";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "LP-FINAL",
-      subtitle: "Sistema de Gestión de Ejercicios",
-      description: "Servicio REST desarrollado en Spring Boot para administrar módulos de ejercicios. Incluye cliente web prototipo con HTML-Bootstrap y documentación completa de la API con Swagger.",
-      technologies: ["Java", "Spring Boot", "HTML", "Bootstrap", "Swagger", "REST API"],
-      year: "2024",
-      category: "Backend",
-      features: [
-        "API REST completa para gestión de ejercicios",
-        "Documentación automática con Swagger",
-        "Cliente web responsivo",
-        "Arquitectura modular"
-      ],
-      githubUrl: "https://github.com/DERS0214",
-      liveUrl: null
-    },
-    {
-      title: "ProyectoPHP-AnalizadoresLSS",
-      subtitle: "Analizadores Léxico y Sintáctico",
-      description: "Implementación de analizadores léxico y sintáctico para un subconjunto de PHP, desplegados en un panel web Dockerizado. Proyecto enfocado en fundamentos de compiladores y CI/CD.",
-      technologies: ["PHP", "Docker", "HTML", "CSS", "Compiladores", "CI/CD"],
-      year: "2024",
-      category: "DevOps",
-      features: [
-        "Analizador léxico personalizado",
-        "Analizador sintáctico",
-        "Panel web dockerizado",
-        "Pipeline CI/CD local"
-      ],
-      githubUrl: "https://github.com/DERS0214",
-      liveUrl: null
-    },
-    {
-      title: "Proyecto-EstructurasDeDatos",
-      subtitle: "Estructuras de Datos Avanzadas",
-      description: "Implementación de estructuras de datos clave como heaps, árboles y listas. Incluye benchmarks de rendimiento y dashboard React con endpoints Spring Boot.",
-      technologies: ["Java", "React", "Spring Boot", "Estructuras de Datos", "Algoritmos"],
+      title: "GuayacoCar",
+      subtitle: "Marketplace de Vehículos Multiplataforma",
+      description: "Aplicación completa de marketplace para vehículos que permite a los usuarios navegar, listar y gestionar anuncios de automóviles. Implementa una arquitectura full-stack con frontend Flutter, backend Spring Boot y servicios en la nube de Firebase.",
+      technologies: ["Flutter", "Dart", "Spring Boot", "Java 21", "Firebase (Firestore, Storage, Auth)", "REST API", "Material Design", "Maven"],
       year: "2024",
       category: "Full-Stack",
       features: [
-        "Implementación de heaps y árboles",
-        "Benchmarks de rendimiento",
-        "Dashboard interactivo en React",
-        "API REST con Spring Boot"
+        "Navegación y filtrado de vehículos",
+        "Gestión de anuncios y subida de imágenes",
+        "Autenticación y gestión de sesiones",
+        "Búsqueda y ordenamiento avanzados",
+        "Compatibilidad Multiplataforma (Web, Windows, Android, Linux)"
       ],
-      githubUrl: "https://github.com/DERS0214",
+      githubUrl: "https://github.com/kathyforero/LP-FINAL",
       liveUrl: null
     },
     {
-      title: "ESTADISTICA-PROYECTO",
-      subtitle: "Visualizaciones Interactivas con R",
-      description: "Desarrollo de visualizaciones interactivas con Shiny y reportes automatizados en RMarkdown. Pipeline completo de datos desde análisis hasta presentación web.",
-      technologies: ["R", "Shiny", "RMarkdown", "Estadística", "Data Visualization"],
+      title: "Analizador de Lenguaje PHP",
+      subtitle: "Analizadores Léxico, Sintáctico y Semántico",
+      description: "Este proyecto es un analizador de lenguaje PHP que implementa las tres fases clásicas del front-end de un compilador. Incluye una interfaz gráfica de usuario intuitiva que permite analizar código PHP en tiempo real con retroalimentación visual de errores.",
+      technologies: ["Python 3.x", "PLY (Python Lex-Yacc)", "tkinter", "Algoritmo LALR"],
+      year: "2024",
+      category: "DevOps",
+      features: [
+        "Análisis Completo en Tres Fases (Léxico, Sintáctico, Semántico)",
+        "Interfaz Gráfica Intuitiva con editor de código y visualización de resultados",
+        "Sistema de Gestión de Errores con mensajes descriptivos y codificación de colores",
+        "Tablas de Símbolos en tiempo real para variables y funciones"
+      ],
+      githubUrl: "https://github.com/kathyforero/ProyectoPHP-AnalizadoresLSS",
+      liveUrl: null
+    },
+    {
+      title: "GuayacoCar (JavaFX)",
+      subtitle: "Marketplace de Automóviles con Estructuras de Datos",
+      description: "Aplicación de marketplace de automóviles desarrollada en Java utilizando JavaFX para la interfaz gráfica. El sistema permite a los usuarios navegar, buscar y gestionar vehículos, implementando estructuras de datos personalizadas para optimizar el rendimiento.",
+      technologies: ["Java", "JavaFX", "Maven", "Serialización Java", "Lista Doblemente Enlazada Circular", "ArrayList Dinámico"],
+      year: "2024",
+      category: "Desktop",
+      features: [
+        "Gestión de Usuarios (login, registro, perfiles)",
+        "Gestión de Vehículos (catálogo, marcas, creación/edición)",
+        "Persistencia de datos mediante archivos .dat",
+        "Implementación de estructuras de datos personalizadas"
+      ],
+      githubUrl: "https://github.com/kathyforero/Proyecto-EstructurasDeDatos",
+      liveUrl: null
+    },
+    {
+      title: "Proyecto Final de Estadística",
+      subtitle: "Análisis Estadístico con R y Pruebas de Hipótesis",
+      description: "Este proyecto implementa un análisis estadístico completo desarrollado para el curso de Estadística en IPAO 2024. Utiliza R como motor principal para procesar datos de encuestas estudiantiles y realizar múltiples pruebas estadísticas, incluyendo pruebas de hipótesis, pruebas de normalidad y análisis de independencia.",
+      technologies: ["R", "readxl", "ggplot2", "dplyr", "summarytools", "stats"],
       year: "2024",
       category: "Data Science",
       features: [
-        "Visualizaciones interactivas con Shiny",
-        "Reportes automatizados",
-        "Pipeline de datos completo",
-        "Análisis estadístico avanzado"
+        "Análisis de variables como Estrés, Promedio y Materias",
+        "Pruebas de Hipótesis (Pruebas Z)",
+        "Pruebas de Normalidad (Kolmogorov-Smirnov)",
+        "Pruebas de Independencia (Chi-cuadrado)",
+        "Visualizaciones estadísticas generadas (gráficos de línea, área, curvas normales)"
       ],
-      githubUrl: "https://github.com/DERS0214",
+      githubUrl: "https://github.com/DERS0214/ESTADISTICA-PROYECTO",
       liveUrl: null
     },
     {
-      title: "ED-Proyecto-2P",
-      subtitle: "Juego de Trivia en JavaFX",
-      description: "Desarrollo de un juego de trivia en JavaFX con persistencia en MySQL. Refactorización del patrón MVC para mejorar el desacoplamiento entre lógica y vista.",
-      technologies: ["Java", "JavaFX", "MySQL", "MVC", "Game Development"],
+      title: "Guess-What Quiz Game",
+      subtitle: "Juego de Preguntas con Árboles Binarios en JavaFX",
+      description: "Aplicación de juego de preguntas y respuestas desarrollada en JavaFX que utiliza árboles binarios para implementar la lógica de decisión del juego. Permite a los usuarios jugar juegos de adivinanzas a través de diferentes temas donde el sistema hace preguntas de sí/no para identificar en qué está pensando el usuario.",
+      technologies: ["JavaFX 13", "Java 11", "Maven", "FXML", "Serialización Java", "File I/O"],
       year: "2023",
       category: "Desktop",
       features: [
-        "Interfaz gráfica en JavaFX",
-        "Persistencia con MySQL",
-        "Patrón MVC refactorizado",
-        "Sistema de puntuaciones"
+        "Interfaz gráfica intuitiva con JavaFX y FXML",
+        "Múltiples temas: Animales, Tecnología, Personas Famosas",
+        "Lógica de árbol binario para el juego de adivinanzas",
+        "Gestión de temas y persistencia de datos (serialización Java)"
       ],
-      githubUrl: "https://github.com/DERS0214",
+      githubUrl: "https://github.com/DERS0214/ED-Proyecto-2P",
+      liveUrl: null
+    },
+    {
+      title: "Curriculum Portfolio",
+      subtitle: "Aplicación Web de Portafolio Personal (SPA)",
+      description: "Este proyecto es una aplicación web de portafolio personal desarrollada con React y TypeScript. Presenta información profesional, habilidades técnicas, proyectos y detalles de contacto en una aplicación de una sola página (SPA) moderna y profesional.",
+      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Router", "React Query", "Radix UI", "Lucide React", "Shadcn/UI"],
+      year: "2024",
+      category: "Frontend",
+      features: [
+        "Diseño Responsive y moderno",
+        "Animaciones Fluidas y Accesibilidad",
+        "Soporte para Tema Oscuro/Claro",
+        "Optimización SEO y Navegación Suave",
+        "Estructura Modular (Secciones: Hero, About, Skills, Projects, Education, Contact)"
+      ],
+      githubUrl: "https://github.com/DERS0214/curriculum",
       liveUrl: null
     }
   ];
