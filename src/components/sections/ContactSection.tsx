@@ -5,6 +5,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { Resend } from 'resend';
+
+const resend = new Resend(import.meta.env.VITE_RESEND_API_KEY);
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -64,10 +67,34 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    if (!import.meta.env.VITE_RESEND_API_KEY) {
+      toast({
+        title: "Error de configuración",
+        description: "Error en el envío de correo electrónico",
+        variant: "destructive"
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      // Simular envío de formulario
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
+      const { data, error } = await resend.emails.send({
+        from: 'onboarding@resend.dev',
+        to: 'dramirez021487@gmail.com',
+        subject: `Mensaje de Portafolio: ${formData.subject}`,
+        html: `
+          <p><strong>De:</strong> ${formData.name} &lt;${formData.email}&gt;</p>
+          <p><strong>Asunto:</strong> ${formData.subject}</p>
+          <br>
+          <p><strong>Mensaje:</strong></p>
+          <p>${formData.message}</p>
+        `,
+      });
+
+      if (error) {
+        throw new Error(error.message);
+      }
+
       toast({
         title: "¡Mensaje enviado!",
         description: "Gracias por contactarme. Te responderé pronto.",
@@ -80,10 +107,10 @@ const ContactSection = () => {
         subject: "",
         message: ""
       });
-    } catch (error) {
+    } catch (error: any) {
       toast({
         title: "Error al enviar",
-        description: "Hubo un problema al enviar tu mensaje. Inténtalo de nuevo.",
+        description: `Hubo un problema al enviar tu mensaje: ${error.message || 'Error desconocido'}. Inténtalo de nuevo.`,
         variant: "destructive"
       });
     } finally {

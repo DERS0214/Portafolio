@@ -92,7 +92,7 @@ const ProjectsSection = () => {
       subtitle: "Aplicación Web de Portafolio Personal (SPA)",
       description: "Este proyecto es una aplicación web de portafolio personal desarrollada con React y TypeScript. Presenta información profesional, habilidades técnicas, proyectos y detalles de contacto en una aplicación de una sola página (SPA) moderna y profesional.",
       technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Router", "React Query", "Radix UI", "Lucide React", "Shadcn/UI"],
-      year: "2024",
+      year: "2025",
       category: "Frontend",
       features: [
         "Diseño Responsive y moderno",
