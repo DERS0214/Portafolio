@@ -6,6 +6,23 @@ import { Badge } from "@/components/ui/badge";
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Curriculum Portfolio",
+      subtitle: "Aplicación Web de Portafolio Personal (SPA)",
+      description: "Este proyecto es una aplicación web de portafolio personal desarrollada con React y TypeScript. Presenta información profesional, habilidades técnicas, proyectos y detalles de contacto en una aplicación de una sola página (SPA) moderna y profesional.",
+      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Router", "React Query", "Radix UI", "Lucide React", "Shadcn/UI"],
+      year: "2025",
+      category: "Frontend",
+      features: [
+        "Diseño Responsive y moderno",
+        "Animaciones Fluidas y Accesibilidad",
+        "Soporte para Tema Oscuro/Claro",
+        "Optimización SEO y Navegación Suave",
+        "Estructura Modular (Secciones: Hero, About, Skills, Projects, Education, Contact)"
+      ],
+      githubUrl: "https://github.com/DERS0214/curriculum",
+      liveUrl: null
+    },
+    {
       title: "GuayacoCar",
       subtitle: "Marketplace de Vehículos Multiplataforma",
       description: "Aplicación completa de marketplace para vehículos que permite a los usuarios navegar, listar y gestionar anuncios de automóviles. Implementa una arquitectura full-stack con frontend Flutter, backend Spring Boot y servicios en la nube de Firebase.",
@@ -86,24 +103,7 @@ const ProjectsSection = () => {
       ],
       githubUrl: "https://github.com/DERS0214/ED-Proyecto-2P",
       liveUrl: null
-    },
-    {
-      title: "Curriculum Portfolio",
-      subtitle: "Aplicación Web de Portafolio Personal (SPA)",
-      description: "Este proyecto es una aplicación web de portafolio personal desarrollada con React y TypeScript. Presenta información profesional, habilidades técnicas, proyectos y detalles de contacto en una aplicación de una sola página (SPA) moderna y profesional.",
-      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Router", "React Query", "Radix UI", "Lucide React", "Shadcn/UI"],
-      year: "2025",
-      category: "Frontend",
-      features: [
-        "Diseño Responsive y moderno",
-        "Animaciones Fluidas y Accesibilidad",
-        "Soporte para Tema Oscuro/Claro",
-        "Optimización SEO y Navegación Suave",
-        "Estructura Modular (Secciones: Hero, About, Skills, Projects, Education, Contact)"
-      ],
-      githubUrl: "https://github.com/DERS0214/curriculum",
-      liveUrl: null
-    }
+    }    
   ];
 
   const getCategoryColor = (category: string) => {
