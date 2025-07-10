@@ -81,6 +81,7 @@ out
 # Nuxt.js build / generate output
 .nuxt
 dist
+dist/
 
 # Gatsby files
 .cache/
@@ -106,6 +107,7 @@ dist
 
 # Docusaurus cache and generated files
 .docusaurus
+docs/
 
 # Serverless directories
 .serverless/
