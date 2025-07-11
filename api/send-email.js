@@ -19,8 +19,9 @@ export default async function handler(req, res) {
     }
 
     const { error } = await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'dramirez021487@gmail.com',
+      from: "onboarding@resend.dev",
+      to: "scadrami@espol.edu.ec",
+      reply_to: email,          // el que escribió el formulario
       subject: `Mensaje de Portafolio: ${subject}`,
       html: `
         <p><strong>De:</strong> ${name} &lt;${email}&gt;</p>
