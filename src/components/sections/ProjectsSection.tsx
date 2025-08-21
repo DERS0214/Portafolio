@@ -9,7 +9,7 @@ const ProjectsSection = () => {
       title: "Curriculum Portfolio",
       subtitle: "Aplicación Web de Portafolio Personal (SPA)",
       description: "Este proyecto es una aplicación web de portafolio personal desarrollada con React y TypeScript. Presenta información profesional, habilidades técnicas, proyectos y detalles de contacto en una aplicación de una sola página (SPA) moderna y profesional.",
-      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "React Router", "React Query", "Radix UI", "Lucide React", "Shadcn/UI"],
+      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Lucide React"],
       year: "2025",
       category: "Frontend",
       features: [
@@ -43,7 +43,7 @@ const ProjectsSection = () => {
       title: "Analizador de Lenguaje PHP",
       subtitle: "Analizadores Léxico, Sintáctico y Semántico",
       description: "Este proyecto es un analizador de lenguaje PHP que implementa las tres fases clásicas del front-end de un compilador. Incluye una interfaz gráfica de usuario intuitiva que permite analizar código PHP en tiempo real con retroalimentación visual de errores.",
-      technologies: ["Python 3.x", "PLY (Python Lex-Yacc)", "tkinter", "Algoritmo LALR"],
+      technologies: ["Python 3.x", "PLY (Python Lex-Yacc)", "tkinter"],
       year: "2024",
       category: "DevOps",
       features: [
@@ -75,7 +75,7 @@ const ProjectsSection = () => {
       title: "Proyecto Final de Estadística",
       subtitle: "Análisis Estadístico con R y Pruebas de Hipótesis",
       description: "Este proyecto implementa un análisis estadístico completo desarrollado para el curso de Estadística en IPAO 2024. Utiliza R como motor principal para procesar datos de encuestas estudiantiles y realizar múltiples pruebas estadísticas, incluyendo pruebas de hipótesis, pruebas de normalidad y análisis de independencia.",
-      technologies: ["R", "readxl", "ggplot2", "dplyr", "summarytools", "stats"],
+      technologies: ["R"],
       year: "2024",
       category: "Data Science",
       features: [
