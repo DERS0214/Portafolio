@@ -61,36 +61,41 @@ La aplicación está organizada en seis secciones principales que muestran difer
 
 ### 1. **Hero Section** 
 - Presentación inicial con foto de perfil
-- Animación de roles profesionales rotativa
+- Animación de roles profesionales rotativa (Developer, Data Analytics Specialist, Ingeniero en Computación)
 - Botones de llamada a la acción
 - Enlaces a redes sociales [5](#0-4) 
 
 ### 2. **About Section**
 - Descripción del perfil profesional
-- Estadísticas académicas y profesionales
-- Áreas de competencia destacadas
+- Estadísticas académicas y profesionales (7º semestre, 5+ proyectos, 15+ tecnologías)
+- Áreas de competencia destacadas (Desarrollo Web, Backend & APIs, Análisis de Datos)
 - Estado de disponibilidad [6](#0-5) 
 
 ### 3. **Skills Section**
-- Habilidades técnicas organizadas por categorías
-- Niveles de competencia (Básico, Intermedio, Avanzado)
-- Lenguajes de programación con años de experiencia
-- Herramientas y tecnologías [7](#0-6) 
+- Habilidades técnicas organizadas por categorías:
+  - **Análisis de Datos**: Python, SQL, Excel Avanzado, Pandas, Data Visualization, Business Intelligence
+  - **Backend & APIs**: Java, Spring Boot, REST APIs, Maven, JSON, JUnit
+  - **Frontend**: React 18, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3
+  - **Bases de Datos**: MySQL, Firebase, SQLite, MongoDB
+  - **Herramientas & DevOps**: Git & GitHub, Docker, Postman, Figma, Vite
+  - **Otros Lenguajes**: Dart, C, PHP, R [7](#0-6) 
 
 ### 4. **Projects Section**
 - Showcase de proyectos académicos y personales
+- Categorías: Frontend, Full-Stack, DevOps, Desktop
 - Enlaces a repositorios y demos
 - Tecnologías utilizadas en cada proyecto
 
 ### 5. **Education Section**
-- Historial académico
+- Historial académico (Ingeniería en Computación - 7º semestre)
+- **Beca Data-Driven-Decisions Specialist** (Coding Bootcamps ESPOL + MINTEL, 2025)
 - Certificaciones obtenidas
 - Formación complementaria
 
 ### 6. **Contact Section**
-- Formulario de contacto
+- Formulario de contacto funcional
 - Información de contacto
-- Mapa de ubicación
+- Enlaces a redes sociales profesionales
 
 ## 🏗️ Estructura del Proyecto
 
@@ -150,10 +155,19 @@ El proyecto utiliza múltiples archivos de configuración para coordinar las her
 ## 👨‍💻 Desarrollador
 
 **David Ramírez**
-- Desarrollador Full-Stack
-- Ingeniero en Computación
-- Estudiante de 6º Semestre
-- Especialista en Java & React
+- **Desarrollador Web & Backend** con experiencia en React + TypeScript y Java Spring Boot
+- **Estudiante de 7º Semestre** de Ingeniería en Computación en ESPOL
+- **Becario Data-Driven-Decisions Specialist** de Coding Bootcamps ESPOL + MINTEL (2025)
+- **Especialista en Análisis de Datos** en formación (Python, SQL, Excel Avanzado, Business Intelligence)
+- **Ubicación**: Guayaquil, Ecuador
+- **Disponible** para oportunidades de desarrollo web, backend y análisis de datos
+
+### Perfil Profesional
+- Experiencia en desarrollo frontend con React y TypeScript
+- Conocimientos en desarrollo backend con Java Spring Boot
+- Formación en análisis de datos y business intelligence
+- Trabajo colaborativo bajo metodologías ágiles
+- Aprendizaje continuo en nuevas tecnologías
 
 ## 📄 Licencia
 

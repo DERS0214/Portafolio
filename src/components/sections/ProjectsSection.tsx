@@ -8,7 +8,7 @@ const ProjectsSection = () => {
     {
       title: "Curriculum Portfolio",
       subtitle: "Aplicación Web de Portafolio Personal (SPA)",
-      description: "Este proyecto es una aplicación web de portafolio personal desarrollada con React y TypeScript. Presenta información profesional, habilidades técnicas, proyectos y detalles de contacto en una aplicación de una sola página (SPA) moderna y profesional.",
+      description: "Portafolio profesional desarrollado desde cero con React y TypeScript. Implementé un diseño moderno y responsivo con animaciones fluidas, sistema de temas oscuro/claro, y navegación suave entre secciones. El proyecto demuestra mis habilidades en desarrollo frontend moderno y diseño de UX.",
       technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Lucide React"],
       year: "2025",
       category: "Frontend",
@@ -25,7 +25,7 @@ const ProjectsSection = () => {
     {
       title: "GuayacoCar",
       subtitle: "Marketplace de Vehículos Multiplataforma",
-      description: "Aplicación completa de marketplace para vehículos que permite a los usuarios navegar, listar y gestionar anuncios de automóviles. Implementa una arquitectura full-stack con frontend Flutter, backend Spring Boot y servicios en la nube de Firebase.",
+      description: "Aplicación full-stack completa desarrollada en equipo. Contribuí al backend con Spring Boot implementando APIs RESTful para gestión de vehículos y autenticación de usuarios. El sistema integra Flutter para el frontend multiplataforma y Firebase para servicios en la nube, demostrando arquitectura escalable.",
       technologies: ["Flutter", "Dart", "Spring Boot", "Java 21", "Firebase (Firestore, Storage, Auth)", "REST API", "Material Design", "Maven"],
       year: "2024",
       category: "Full-Stack",
@@ -42,7 +42,7 @@ const ProjectsSection = () => {
     {
       title: "Analizador de Lenguaje PHP",
       subtitle: "Analizadores Léxico, Sintáctico y Semántico",
-      description: "Este proyecto es un analizador de lenguaje PHP que implementa las tres fases clásicas del front-end de un compilador. Incluye una interfaz gráfica de usuario intuitiva que permite analizar código PHP en tiempo real con retroalimentación visual de errores.",
+      description: "Compilador completo desarrollado en Python que implementa las tres fases del análisis de lenguajes. Creé una interfaz gráfica intuitiva con tkinter que permite analizar código PHP en tiempo real, mostrando errores con codificación de colores y tablas de símbolos dinámicas.",
       technologies: ["Python 3.x", "PLY (Python Lex-Yacc)", "tkinter"],
       year: "2024",
       category: "DevOps",
@@ -58,7 +58,7 @@ const ProjectsSection = () => {
     {
       title: "GuayacoCar (JavaFX)",
       subtitle: "Marketplace de Automóviles con Estructuras de Datos",
-      description: "Aplicación de marketplace de automóviles desarrollada en Java utilizando JavaFX para la interfaz gráfica. El sistema permite a los usuarios navegar, buscar y gestionar vehículos, implementando estructuras de datos personalizadas para optimizar el rendimiento.",
+      description: "Aplicación desktop desarrollada completamente en Java con JavaFX. Implementé estructuras de datos personalizadas (lista doblemente enlazada circular y ArrayList dinámico) para optimizar el rendimiento de búsquedas y gestión de vehículos. El sistema incluye persistencia de datos mediante serialización Java.",
       technologies: ["Java", "JavaFX", "Maven", "Serialización Java", "Lista Doblemente Enlazada Circular", "ArrayList Dinámico"],
       year: "2024",
       category: "Desktop",
@@ -74,7 +74,7 @@ const ProjectsSection = () => {
     {
       title: "Guess-What Quiz Game",
       subtitle: "Juego de Preguntas con Árboles Binarios en JavaFX",
-      description: "Aplicación de juego de preguntas y respuestas desarrollada en JavaFX que utiliza árboles binarios para implementar la lógica de decisión del juego. Permite a los usuarios jugar juegos de adivinanzas a través de diferentes temas donde el sistema hace preguntas de sí/no para identificar en qué está pensando el usuario.",
+      description: "Juego educativo desarrollado en JavaFX que utiliza árboles binarios para implementar un sistema de adivinanzas inteligente. Diseñé la lógica del juego para que aprenda de las respuestas del usuario, expandiendo dinámicamente el árbol de decisiones. Incluye múltiples temas y persistencia de datos.",
       technologies: ["JavaFX 13", "Java 11", "Maven", "FXML", "Serialización Java", "File I/O"],
       year: "2023",
       category: "Desktop",
