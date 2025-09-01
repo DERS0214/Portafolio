@@ -8,14 +8,14 @@ const EducationSection = () => {
       degree: "Ingeniería en Computación",
       institution: "Escuela Superior Politécnica del Litoral (ESPOL)",
       period: "2022 - Presente",
-      status: "6º Semestre",
+      status: "7º Semestre",
       location: "Guayaquil, Ecuador",
-      description: "Enfoque en desarrollo de software, algoritmos, estructuras de datos y metodologías ágiles. Experiencia práctica en proyectos full-stack integrando frontend, backend y bases de datos.",
+      description: "Enfoque en desarrollo de software, algoritmos, estructuras de datos y metodologías ágiles. Experiencia práctica en proyectos de desarrollo web y análisis de datos.",
       highlights: [
         "Promedio destacado en materias de programación",
         "Liderazgo en proyectos colaborativos",
         "Experiencia en metodologías ágiles",
-        "Desarrollo de aplicaciones"
+        "Desarrollo de aplicaciones web"
       ]
     },
     {
@@ -35,6 +35,13 @@ const EducationSection = () => {
   ];
 
   const certifications = [
+    {
+      name: "Data-Driven-Decisions Specialist",
+      issuer: "Coding Bootcamps ESPOL + MINTEL",
+      year: "2025",
+      type: "Beca",
+      description: "Beca completa en curso para especialización en análisis de datos. Completado: Excel avanzado. En progreso: SQL, Python para Analytics, Business Intelligence, Data Visualization y GenAI aplicada al ciclo analítico."
+    },
     {
       name: "Participación en Road to Start Hack",
       issuer: "ESPOL x i3lab",
@@ -74,6 +81,8 @@ const EducationSection = () => {
 
   const getTypeColor = (type: string) => {
     switch (type) {
+      case "Beca":
+        return "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300";
       case "Hackathon":
         return "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300";
       case "Ciberseguridad":
@@ -168,7 +177,7 @@ const EducationSection = () => {
           {/* Certifications */}
           <div className="fade-in">
             <h3 className="text-2xl font-semibold text-foreground text-center mb-8">
-              Certificaciones
+              Certificaciones y Becas
             </h3>
             
             <div className="grid md:grid-cols-2 gap-6">

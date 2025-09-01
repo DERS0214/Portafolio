@@ -5,23 +5,23 @@ const AboutSection = () => {
   const highlights = [
     {
       icon: Code,
-      title: "Full-Stack Development",
-      description: "Experiencia en desarrollo completo desde interfaces hasta APIs"
+      title: "Desarrollo Web",
+      description: "Experiencia en desarrollo frontend con React, TypeScript y diseño responsivo"
     },
     {
       icon: Rocket,
-      title: "Proyectos End-to-End",
-      description: "Liderazgo en proyectos académicos integrando frontend, backend y bases de datos"
+      title: "Backend & APIs",
+      description: "Desarrollo de APIs con Java Spring Boot y experiencia en arquitectura backend"
     },
     {
       icon: Users,
-      title: "Metodología Ágil",
-      description: "Trabajo colaborativo bajo metodologías ágiles en equipos de desarrollo"
+      title: "Análisis de Datos",
+      description: "Becario Data-Driven-Decisions Specialist con enfoque en Python, SQL y BI"
     },
     {
       icon: Zap,
       title: "Aprendizaje Continuo",
-      description: "Constante actualización en nuevas tecnologías y mejores prácticas"
+      description: "Constante actualización en nuevas tecnologías y especialización en data analytics"
     }
   ];
 
@@ -36,7 +36,7 @@ const AboutSection = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto mb-6"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Estudiante apasionado por la tecnología con enfoque en desarrollo full-stack
+              Estudiante apasionado por la tecnología con enfoque en desarrollo web y análisis de datos
             </p>
           </div>
 
@@ -48,22 +48,24 @@ const AboutSection = () => {
                   Mi Perfil Profesional
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  Soy estudiante de 6º semestre de <span className="text-primary font-semibold">Ingeniería en Computación</span> en 
-                  la ESPOL, con un enfoque especializado en desarrollo full-stack. Mi experiencia se centra en crear 
-                  interfaces dinámicas y responsivas con <span className="text-primary font-semibold">React + Tailwind CSS</span> y 
-                  desarrollar APIs robustas y escalables con <span className="text-primary font-semibold">Java Spring Boot</span>.
+                  Soy estudiante de 7º semestre de <span className="text-primary font-semibold">Ingeniería en Computación</span> en 
+                  la ESPOL, con un enfoque especializado en desarrollo web y análisis de datos. Mi experiencia se centra en crear 
+                  interfaces dinámicas y responsivas con <span className="text-primary font-semibold">React + TypeScript</span>, 
+                  desarrollar APIs robustas con <span className="text-primary font-semibold">Java Spring Boot</span> y 
+                  análisis de datos con <span className="text-primary font-semibold">Python + SQL</span>.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  He liderado proyectos académicos end-to-end, integrando frontend, backend y bases de datos bajo 
-                  metodología ágil. Busco aportar mi versatilidad técnica y pasión por la innovación en un equipo 
-                  de desarrollo donde pueda contribuir desde el diseño hasta la implementación.
+                  Recientemente fui seleccionado como <span className="text-primary font-semibold">Becario Data-Driven-Decisions Specialist</span> 
+                  de Coding Bootcamps ESPOL con el apoyo del MINTEL, lo que me permitirá fortalecer competencias para convertir datos 
+                  en decisiones de negocio con impacto real. Busco oportunidades donde pueda aplicar mis habilidades técnicas y 
+                  mi pasión por la innovación.
                 </p>
               </div>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 pt-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">6º</div>
+                  <div className="text-3xl font-bold text-primary">7º</div>
                   <div className="text-sm text-muted-foreground">Semestre</div>
                 </div>
                 <div className="text-center">
@@ -71,7 +73,7 @@ const AboutSection = () => {
                   <div className="text-sm text-muted-foreground">Proyectos</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">10+</div>
+                  <div className="text-3xl font-bold text-primary">15+</div>
                   <div className="text-sm text-muted-foreground">Tecnologías</div>
                 </div>
               </div>

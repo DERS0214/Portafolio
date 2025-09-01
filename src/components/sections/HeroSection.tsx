@@ -7,10 +7,11 @@ const HeroSection = () => {
   const [currentRole, setCurrentRole] = useState(0);
   
   const roles = [
-    "Desarrollador Full-Stack",
+    "Developer",
+    "Data Analytics Specialist",
     "Ingeniero en Computación",
-    "Estudiante de 6º Semestre",
-    "Especialista en Java & React"
+    "Estudiante de 7º Semestre",
+    "Analista de Datos"
   ];
 
   useEffect(() => {
@@ -67,9 +68,8 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed slide-in-left">
-            Estudiante de 6º semestre de Ingeniería en Computación especializado en desarrollo full-stack. 
-            Experiencia en interfaces dinámicas con <span className="text-primary font-semibold">React + Tailwind</span> y 
-            APIs robustas en <span className="text-primary font-semibold">Java Spring Boot</span>.
+            Estudiante de 7º semestre de Ingeniería en Computación y <span className="text-primary font-semibold">Becario Data-Driven-Decisions Specialist</span> de Coding Bootcamps ESPOL. 
+            Experiencia en desarrollo web con <span className="text-primary font-semibold">React + TypeScript</span>, backend con <span className="text-primary font-semibold">Java Spring Boot</span> y análisis de datos con <span className="text-primary font-semibold">Python + SQL</span>.
           </p>
 
           {/* CTA Buttons */}

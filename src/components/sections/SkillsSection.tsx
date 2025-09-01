@@ -4,75 +4,76 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const SkillsSection = () => {
   const skillCategories = [
     {
+      title: "Análisis de Datos",
+      icon: "📊",
+      color: "from-blue-500 to-cyan-500",
+      skills: [
+        { name: "Python", icon: "🐍" },
+        { name: "SQL", icon: "🗄️" },
+        { name: "Excel Avanzado", icon: "📈" },
+        { name: "Pandas", icon: "🐼" },
+        { name: "Data Visualization", icon: "📊" },
+        { name: "Business Intelligence", icon: "📋" }
+      ]
+    },
+    {
+      title: "Backend & APIs",
+      icon: "⚙️",
+      color: "from-green-500 to-emerald-500",
+      skills: [
+        { name: "Java", icon: "☕" },
+        { name: "Spring Boot", icon: "🍃" },
+        { name: "REST APIs", icon: "🔗" },
+        { name: "Maven", icon: "📦" },
+        { name: "JSON", icon: "📄" },
+        { name: "JUnit", icon: "🧪" }
+      ]
+    },
+    {
       title: "Frontend",
       icon: "🎨",
-      color: "from-blue-500 to-cyan-500",
+      color: "from-purple-500 to-violet-500",
       skills: [
         { name: "React 18", icon: "⚛️" },
         { name: "TypeScript", icon: "📘" },
         { name: "JavaScript", icon: "🟨" },
         { name: "Tailwind CSS", icon: "🎨" },
         { name: "HTML5", icon: "🌐" },
-        { name: "CSS3", icon: "🎨" },
-        { name: "Vite", icon: "⚡" },
-        { name: "Flutter", icon: "📱" }
-      ]
-    },
-    {
-      title: "Backend",
-      icon: "⚙️",
-      color: "from-green-500 to-emerald-500",
-      skills: [
-        { name: "Java", icon: "☕" },
-        { name: "Spring Boot", icon: "🍃" },
-        { name: "Node.js", icon: "🟢" },
-        { name: "Python", icon: "🐍" },
-        { name: "PHP", icon: "🐘" }
+        { name: "CSS3", icon: "🎨" }
       ]
     },
     {
       title: "Bases de Datos",
       icon: "🗄️",
-      color: "from-purple-500 to-violet-500",
-      skills: [
-        { name: "MySQL", icon: "🐬" },
-        { name: "Firebase Realtime", icon: "🔥" },
-        { name: "Firestore", icon: "🔥" },
-        { name: "SQL", icon: "🗄️" }
-      ]
-    },
-    {
-      title: "DevOps & Cloud",
-      icon: "☁️",
       color: "from-orange-500 to-red-500",
       skills: [
-        { name: "Docker", icon: "🐳" },
-        { name: "GitHub Actions", icon: "⚡" },
-        { name: "Google Cloud", icon: "☁️" },
-        { name: "AWS EC2", icon: "☁️" },
-        { name: "Git & GitHub", icon: "📚" }
+        { name: "MySQL", icon: "🐬" },
+        { name: "Firebase", icon: "🔥" },
+        { name: "SQLite", icon: "💾" },
+        { name: "MongoDB", icon: "🍃" }
       ]
     },
     {
-      title: "Herramientas",
+      title: "Herramientas & DevOps",
       icon: "🛠️",
       color: "from-yellow-500 to-amber-500",
       skills: [
+        { name: "Git & GitHub", icon: "📚" },
+        { name: "Docker", icon: "🐳" },
         { name: "Postman", icon: "📮" },
         { name: "Figma", icon: "🎨" },
-        { name: "Notion", icon: "📝" },
-        { name: "Arduino", icon: "🔌" },
-        { name: "JUnit", icon: "🧪" }
+        { name: "Vite", icon: "⚡" }
       ]
     },
-
     {
       title: "Otros Lenguajes",
       icon: "💻",
       color: "from-pink-500 to-rose-500",
       skills: [
         { name: "Dart", icon: "🎯" },
-        { name: "C", icon: "🔵" }
+        { name: "C", icon: "🔵" },
+        { name: "PHP", icon: "🐘" },
+        { name: "R", icon: "📊" }
       ]
     }
   ];
@@ -88,7 +89,7 @@ const SkillsSection = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto mb-6"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Tecnologías y herramientas para crear soluciones completas
+              Tecnologías y herramientas para desarrollo web y análisis de datos
             </p>
           </div>
 

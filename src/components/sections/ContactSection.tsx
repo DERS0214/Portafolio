@@ -300,7 +300,7 @@ const ContactSection = () => {
           {/* Footer note */}
           <div className="text-center mt-16 fade-in">
             <p className="text-muted-foreground">
-              💼 Disponible para oportunidades de desarrollo full-stack • 
+              💼 Disponible para oportunidades de desarrollo web, backend y análisis de datos • 
               🚀 Siempre abierto a nuevos desafíos técnicos
             </p>
           </div>

@@ -72,23 +72,6 @@ const ProjectsSection = () => {
       liveUrl: null
     },
     {
-      title: "Proyecto Final de Estadística",
-      subtitle: "Análisis Estadístico con R y Pruebas de Hipótesis",
-      description: "Este proyecto implementa un análisis estadístico completo desarrollado para el curso de Estadística en IPAO 2024. Utiliza R como motor principal para procesar datos de encuestas estudiantiles y realizar múltiples pruebas estadísticas, incluyendo pruebas de hipótesis, pruebas de normalidad y análisis de independencia.",
-      technologies: ["R"],
-      year: "2024",
-      category: "Data Science",
-      features: [
-        "Análisis de variables como Estrés, Promedio y Materias",
-        "Pruebas de Hipótesis (Pruebas Z)",
-        "Pruebas de Normalidad (Kolmogorov-Smirnov)",
-        "Pruebas de Independencia (Chi-cuadrado)",
-        "Visualizaciones estadísticas generadas (gráficos de línea, área, curvas normales)"
-      ],
-      githubUrl: "https://github.com/DERS0214/ESTADISTICA-PROYECTO",
-      liveUrl: null
-    },
-    {
       title: "Guess-What Quiz Game",
       subtitle: "Juego de Preguntas con Árboles Binarios en JavaFX",
       description: "Aplicación de juego de preguntas y respuestas desarrollada en JavaFX que utiliza árboles binarios para implementar la lógica de decisión del juego. Permite a los usuarios jugar juegos de adivinanzas a través de diferentes temas donde el sistema hace preguntas de sí/no para identificar en qué está pensando el usuario.",
@@ -108,14 +91,16 @@ const ProjectsSection = () => {
 
   const getCategoryColor = (category: string) => {
     switch (category) {
+      case "Data Science":
+        return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300";
+      case "Frontend":
+        return "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300";
       case "Full-Stack":
         return "bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300";
       case "Backend":
-        return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300";
-      case "DevOps":
-        return "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300";
-      case "Data Science":
         return "bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300";
+      case "DevOps":
+        return "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300";
       case "Desktop":
         return "bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-300";
       default:
@@ -134,7 +119,7 @@ const ProjectsSection = () => {
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-primary-light mx-auto mb-6"></div>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Una selección de proyectos académicos que demuestran mis habilidades en desarrollo full-stack
+              Una selección de proyectos académicos que demuestran mis habilidades en desarrollo web, backend y análisis de datos
             </p>
           </div>
 
