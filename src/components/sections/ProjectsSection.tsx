@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+// Importar imágenes de proyectos
+import portfolioImg from "@/assets/proj-portfolio.png";
+import guayacocarImg from "@/assets/guayacocar.png";
+import phpAnalyzerImg from "@/assets/phpAnalyzerImg.png";
+import guayacocarJavafxImg from "@/assets/guayacocarJavafxImg.png";
+import quizGameImg from "@/assets/quizGameImg.png";
+
 const ProjectsSection = () => {
   const projects = [
     {
@@ -12,6 +19,7 @@ const ProjectsSection = () => {
       technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Lucide React"],
       year: "2025",
       category: "Frontend",
+      image: portfolioImg,
       features: [
         "Diseño Responsive y moderno",
         "Animaciones Fluidas y Accesibilidad",
@@ -29,6 +37,7 @@ const ProjectsSection = () => {
       technologies: ["Flutter", "Dart", "Spring Boot", "Java 21", "Firebase (Firestore, Storage, Auth)", "REST API", "Material Design", "Maven"],
       year: "2024",
       category: "Full-Stack",
+      image: guayacocarImg,
       features: [
         "Navegación y filtrado de vehículos",
         "Gestión de anuncios y subida de imágenes",
@@ -46,6 +55,7 @@ const ProjectsSection = () => {
       technologies: ["Python 3.x", "PLY (Python Lex-Yacc)", "tkinter"],
       year: "2024",
       category: "DevOps",
+      image: phpAnalyzerImg,
       features: [
         "Análisis Completo en Tres Fases (Léxico, Sintáctico, Semántico)",
         "Interfaz Gráfica Intuitiva con editor de código y visualización de resultados",
@@ -62,6 +72,7 @@ const ProjectsSection = () => {
       technologies: ["Java", "JavaFX", "Maven", "Serialización Java", "Lista Doblemente Enlazada Circular", "ArrayList Dinámico"],
       year: "2024",
       category: "Desktop",
+      image: guayacocarJavafxImg,
       features: [
         "Gestión de Usuarios (login, registro, perfiles)",
         "Gestión de Vehículos (catálogo, marcas, creación/edición)",
@@ -78,6 +89,7 @@ const ProjectsSection = () => {
       technologies: ["JavaFX 13", "Java 11", "Maven", "FXML", "Serialización Java", "File I/O"],
       year: "2023",
       category: "Desktop",
+      image: quizGameImg,
       features: [
         "Interfaz gráfica intuitiva con JavaFX y FXML",
         "Múltiples temas: Animales, Tecnología, Personas Famosas",
@@ -124,25 +136,35 @@ const ProjectsSection = () => {
           </div>
 
           {/* Projects grid */}
-          <div className="grid gap-8">
+          <div className="grid md:grid-cols-2 gap-6 max-w-7xl mx-auto">
             {projects.map((project, index) => (
               <Card 
                 key={index} 
-                className="card-hover border-border/50 overflow-hidden scale-in group"
+                className="card-hover border-border/50 overflow-hidden scale-in group min-h-[600px]"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <CardHeader className="space-y-4">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                    <div className="space-y-2">
-                      <div className="flex items-center gap-3">
-                        <CardTitle className="text-2xl text-foreground group-hover:text-primary transition-fast">
+                {/* Project Image */}
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-64 object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+
+                <CardHeader className="space-y-3 pb-4">
+                  <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+                    <div className="space-y-2 flex-1">
+                      <div className="flex items-center gap-3 flex-wrap">
+                        <CardTitle className="text-xl text-foreground group-hover:text-primary transition-fast">
                           {project.title}
                         </CardTitle>
                         <Badge className={getCategoryColor(project.category)}>
                           {project.category}
                         </Badge>
                       </div>
-                      <p className="text-lg text-muted-foreground font-medium">
+                      <p className="text-base text-muted-foreground font-medium">
                         {project.subtitle}
                       </p>
                       <p className="text-sm text-muted-foreground">
@@ -150,7 +172,7 @@ const ProjectsSection = () => {
                       </p>
                     </div>
                     
-                    <div className="flex space-x-2">
+                    <div className="flex space-x-2 flex-shrink-0">
                       <Button
                         variant="outline"
                         size="sm"
@@ -178,21 +200,21 @@ const ProjectsSection = () => {
                   </div>
                 </CardHeader>
 
-                <CardContent className="space-y-6">
-                  <p className="text-muted-foreground leading-relaxed">
+                <CardContent className="space-y-4 pt-0">
+                  <p className="text-muted-foreground leading-relaxed text-sm">
                     {project.description}
                   </p>
 
                   {/* Features */}
                   <div>
-                    <h4 className="text-sm font-semibold text-foreground mb-3">
+                    <h4 className="text-sm font-semibold text-foreground mb-2">
                       Características principales:
                     </h4>
-                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <ul className="grid grid-cols-1 gap-1">
                       {project.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                          <span className="w-1.5 h-1.5 bg-primary rounded-full mr-3 flex-shrink-0"></span>
-                          {feature}
+                        <li key={featureIndex} className="flex items-start text-xs text-muted-foreground">
+                          <span className="w-1 h-1 bg-primary rounded-full mr-2 mt-2 flex-shrink-0"></span>
+                          <span className="leading-relaxed">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -200,10 +222,10 @@ const ProjectsSection = () => {
 
                   {/* Technologies */}
                   <div>
-                    <h4 className="text-sm font-semibold text-foreground mb-3">
+                    <h4 className="text-sm font-semibold text-foreground mb-2">
                       Tecnologías utilizadas:
                     </h4>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-1">
                       {project.technologies.map((tech, techIndex) => (
                         <Badge 
                           key={techIndex} 
